@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main_content %}
+        <script src="{{url_for('static', filename='game.js')}}" type="module"></script>
+        <form action="">
+                <label for="player_name">Gamer Tag:</label>
+                <input name="player_name" id="player_name" type="text" action="" maxlength="20">
+        </form>
+        <canvas width="1848" height="975"></canvas>
+{% endblock %}
